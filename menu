@@ -1,0 +1,28 @@
+
+[begin] (Cloud Space)
+[encoding] {UTF-8}
+[submenu] (REPL Apps)
+      [exec] (xterm) {xterm}
+      [exec] (firefox) {firefox}
+      [exe] (chromium) {chromium-browser --no-sandbox}
+      [submenu] (Minecraft)
+        [exec] (Official Launcher) {~/CloudSpace/games/mc.sh -o}
+        [exec] (SK Launcher) {~/CloudSpace/games/mc.sh -k}
+        [exec] (Minecraft PI) {~/CloudSpace/games/mc.sh -p}
+      [end]
+[end]
+[submenu] (Fluxbox menu)
+      [config] (Configure)
+[submenu] (User Styles) {Choose a style...}
+      [stylesdir] (~/.fluxbox/styles)
+[end]
+      [workspaces] (Workspace List)
+      [commanddialog] (Fluxbox Command)
+      [reconfig] (Reload config)
+      [restart] (Restart)
+      [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+      [separator]
+      [exit] (Exit)
+[end]
+[endencoding]
+[end]
